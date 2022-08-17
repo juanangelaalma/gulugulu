@@ -6,7 +6,6 @@ import { BiVideo, BiNews } from 'react-icons/bi'
 import NavLink from './NavLink'
 
 const Navbar = () => {
-  // get path with react router dom v6
   const [active, setActive] = useState('')
   const path = useLocation().pathname
 
