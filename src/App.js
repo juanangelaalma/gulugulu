@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="bg-dark-primary">
       <Header />
-      <div className="">
+      <div className="pl-5 py-4 md:pl-[12%]">
         <Outlet />
       </div>
     </div>
