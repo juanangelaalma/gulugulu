@@ -19,7 +19,7 @@ const Header = () => {
           {/* <BsMoon size={30} /> */}
         </div>
       </div>
-      <div className='px-5 md:pl-[12%] border-b border-dark-gray-second'>
+      <div className='px-5 md:pl-[12%] border-b border-b-[#3C4043] border-dark-gray-second'>
         <Navbar />
       </div>
     </div>
