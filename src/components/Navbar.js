@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className='w-full'>
-      <ul className='w-full flex space-x-6 overflow-x-auto'>
+      <ul className='w-full flex space-x-6 overflow-x-auto scrollbar-hide'>
         <NavLink to="/" Icon={AiOutlineSearch} active={active} text="All" />
         <NavLink to="/images" Icon={BsImages} active={active} text="Images" />
         <NavLink to="/videos" Icon={BiVideo} active={active} text="Videos" />

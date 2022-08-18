@@ -18,5 +18,7 @@ module.exports = {
       serif: [ 'Roboto Slab', 'serif' ],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }

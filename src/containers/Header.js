@@ -1,8 +1,6 @@
 import React from 'react';
-import Brand from '../components/Brand';
-import Navbar from '../components/Navbar';
-import Searchbar from '../components/Searchbar';
 import { BsSun, BsMoon } from 'react-icons/bs'
+import { Brand, Navbar, Searchbar } from '../components';
 
 const Header = () => {
   return (

@@ -1,7 +1,7 @@
 // functional component for App.js
 import React from "react";
-import Header from "./containers/Header";
 import { Outlet } from "react-router-dom";
+import { Header } from "./containers";
 
 const App = () => {
   return (
