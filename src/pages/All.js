@@ -1,6 +1,6 @@
 import React from 'react'
 import { Site } from '../components'
-import { News, Images } from '../containers'
+import { News, Images, Videos } from '../containers'
 
 const All = () => {
   return (
@@ -8,6 +8,7 @@ const All = () => {
       <Site />
       <News />
       <Images />
+      {/* <Videos /> */}
     </div>
   )
 }

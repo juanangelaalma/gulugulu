@@ -7,5 +7,6 @@ import Site from "./Site";
 import NewsCard from "./NewsCard";
 import ButtonMore from "./ButtonMore";
 import Image from "./Image";
+import Video from "./Video";
 
-export { AdditionalSite, Brand, NavLink, Navbar, Searchbar, Site, NewsCard, ButtonMore, Image };
+export { AdditionalSite, Brand, NavLink, Navbar, Searchbar, Site, NewsCard, ButtonMore, Image, Video };
