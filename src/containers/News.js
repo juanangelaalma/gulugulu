@@ -1,7 +1,6 @@
 import React from "react";
-import { BsArrowRightShort } from 'react-icons/bs'
 import { BiNews } from 'react-icons/bi'
-import { NewsCard } from "../components";
+import { NewsCard, ButtonMore } from "../components";
 
 const News = () => {
   return (
@@ -17,12 +16,7 @@ const News = () => {
           <NewsCard />
           <NewsCard />
         </div>
-      </div>
-      <div className="hidden md:block absolute left-1/2 translate-x-[-50%] bottom-[-18px]">
-        <button className="bg-dark-second h-[36px] px-20 text-dark-white text-sm rounded-full flex items-center">
-          <span>Berita lainnya</span>
-          <BsArrowRightShort size={24} />
-        </button>
+        <ButtonMore to='/news' text='Berita lainnya' />
       </div>
     </div>
   );

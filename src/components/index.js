@@ -5,5 +5,7 @@ import Navbar from "./Navbar";
 import Searchbar from "./Searchbar";
 import Site from "./Site";
 import NewsCard from "./NewsCard";
+import ButtonMore from "./ButtonMore";
+import Image from "./Image";
 
-export { AdditionalSite, Brand, NavLink, Navbar, Searchbar, Site, NewsCard };
+export { AdditionalSite, Brand, NavLink, Navbar, Searchbar, Site, NewsCard, ButtonMore, Image };

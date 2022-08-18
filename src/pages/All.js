@@ -1,12 +1,13 @@
 import React from 'react'
 import { Site } from '../components'
-import { News } from '../containers'
+import { News, Images } from '../containers'
 
 const All = () => {
   return (
-    <div className='w-full space-y-5 pb-6 max-w-[630px]'>
+    <div className='w-full space-y-12 pb-6 max-w-[630px]'>
       <Site />
       <News />
+      <Images />
     </div>
   )
 }
