@@ -33,9 +33,8 @@ const Images = () => {
         </button>
         <div className="mb-8 md:mb-2 max-h-[278px] overflow-y-hidden scrollbar-hide">
           <div
-            className={`flex flex-wrap justify-center w-auto lg:flex-nowrap lg:block lg:whitespace-nowrap translate-x-[-${
-              index * 70
-            }%] transition-transform duration-700`}
+            style={{ transform: `translateX(-${index * 70}%)` }}
+            className={`flex flex-wrap justify-center w-auto lg:flex-nowrap lg:block lg:whitespace-nowrap transition-transform duration-700`}
           >
             <div className="h-[124px] w-[124px] overflow-hidden mr-2 my-[8px] lg:w-auto lg:inline-block">
               <Image url="https://i.ytimg.com/vi/YAC2wGZT21Y/mqdefault.jpg" />
