@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import {useLocation } from 'react-router-dom'
 import { BsImages } from 'react-icons/bs'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { BiVideo, BiNews } from 'react-icons/bi'
 import NavLink from './NavLink'
+import { SearchContext } from '../context/SearchContext'
 
 const Navbar = () => {
   const [active, setActive] = useState('')

@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
+import { SearchContext } from "../context/SearchContext";
 
 const Searchbar = () => {
   const [input, setInput] = useState("");
+  const {search, setSearch} = useContext(SearchContext)
 
-  const handleSubmit = () => {
-    alert(input)
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSearch(input)
   }
+
+  useEffect(() => {
+    setInput(search)
+  }, [search])
 
   return (
     <div className="w-full">
