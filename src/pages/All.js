@@ -59,13 +59,13 @@ const All = () => {
           <div className="space-y-8">
             <Site {...results.all[keyword].results[0]} />
             <News />
+            <Images />
             {shiftedResults.map((result, index) => (
               <Site key={index} {...result} />
               ))}
           </div>
         )
         )}
-        <Images />
     </div>
   );
 };

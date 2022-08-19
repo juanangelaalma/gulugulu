@@ -12,6 +12,7 @@ const News = () => {
   const { results, setResults } = useContext(ResultTempContext);
   const keyword = stringToSlug(search, "+");
   const [loading, isLoading] = useState(!results.all[keyword] && search);
+  const [slicedResults, setSlicedResults] = useState([]);
 
   const getNews = async () => {
     try {
@@ -20,7 +21,7 @@ const News = () => {
           console.warn("fetching...");
           isLoading(true);
           // fetching data
-          const response = await fetcher(`/news/q=${keyword}&num=4`);
+          const response = await fetcher(`/news/q=${keyword}`);
 
           // memasukkan data ke dalam temporary state
           const newResults = {};
@@ -40,9 +41,11 @@ const News = () => {
     getNews();
   }, [search]);
 
-  const slicedResults = results.news[keyword]
-    ? results.news[keyword].entries.slice(0, 4)
-    : [];
+  useEffect(() => {
+    if (results.news[keyword]) {
+      setSlicedResults([...results.news[keyword].entries.slice(0, 4)]);
+    }
+  } , [results]);
 
   if(!loading && slicedResults.length < 1) {
     return null
