@@ -12,7 +12,7 @@ const All = () => {
   const { results, setResults } = useContext(ResultTempContext);
   const keyword = stringToSlug(search, "+");
   const [loading, isLoading] = useState(!results.all[keyword] && search);
-  const [shiftedResults, setShiftedResults] = useState([]) 
+  const [shiftedResults, setShiftedResults] = useState([]);
 
   const searching = async () => {
     // cek apakah keyword sudah pernah dicari
@@ -40,32 +40,38 @@ const All = () => {
   }, [search]);
 
   useEffect(() => {
-    if(results.all[keyword]) {
-      setShiftedResults([...results.all[keyword].results])
+    window.scrollTo(0, 0);
+  }, [])
+
+  useEffect(() => {
+    if (results.all[keyword]) {
+      setShiftedResults([...results.all[keyword].results]);
     }
-  }, [results])
+  }, [results]);
 
   shiftedResults.shift();
   return (
-    <div className="w-full space-y-12 pb-6 max-w-[630px]">
-      {loading ? (
-        <div className="space-y-8">
-          <SiteLoader />
-          <SiteLoader />
-          <SiteLoader />
-        </div>
-      ) : (
-        results.all[keyword] && (
+    <div className="px-5 py-4 md:pr-0 md:pl-[12%] w-full">
+      <div className="w-full space-y-12 pb-6 max-w-[630px]">
+        {loading ? (
           <div className="space-y-8">
-            <Site {...results.all[keyword].results[0]} />
-            <News />
-            <Images />
-            {shiftedResults.map((result, index) => (
-              <Site key={index} {...result} />
-              ))}
+            <SiteLoader />
+            <SiteLoader />
+            <SiteLoader />
           </div>
-        )
+        ) : (
+          results.all[keyword] && (
+            <div className="space-y-8">
+              <Site {...results.all[keyword].results[0]} />
+              <News />
+              <Images />
+              {shiftedResults.map((result, index) => (
+                <Site key={index} {...result} />
+              ))}
+            </div>
+          )
         )}
+      </div>
     </div>
   );
 };

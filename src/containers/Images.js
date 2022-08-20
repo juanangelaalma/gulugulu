@@ -65,7 +65,6 @@ const Images = () => {
     return null
   }
 
-  console.log("sliced result", slicedResults);
   return (
     <div className="w-full relative space-y-2 md:pb-6 md:border-b border-[#3C4043]">
       <div className="flex flex-row items-center space-x-2 text-xl text-dark-white">

@@ -8,6 +8,7 @@ const Searchbar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    document.title = input + " - Penelusuran Google";
     setSearch(input)
   }
 
