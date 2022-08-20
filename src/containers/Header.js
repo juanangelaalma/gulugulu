@@ -13,11 +13,11 @@ const Header = () => {
         <Searchbar />
         </div>
         <div className='w-[8%] md:w-[20%] flex justify-end'>
-          <BsSun className='text-dark-gray-second' size={30} />
+          <BsSun className='text-gray-second dark:text-dark-gray-second' size={30} />
           {/* <BsMoon size={30} /> */}
         </div>
       </div>
-      <div className='px-5 md:pl-[12%] border-b border-b-[#3C4043]'>
+      <div className='px-5 md:pl-[12%] border-b border-b-[#EBEBEB] dark:border-b-[#3C4043]'>
         <Navbar />
       </div>
     </div>

@@ -66,21 +66,21 @@ const Images = () => {
   }
 
   return (
-    <div className="w-full relative space-y-2 md:pb-6 md:border-b border-[#3C4043]">
-      <div className="flex flex-row items-center space-x-2 text-xl text-dark-white">
+    <div className="w-full relative space-y-2 md:pb-6 md:border-b border-[#EBEBEB] dark:border-[#3C4043]">
+      <div className="flex flex-row items-center space-x-2 text-xl text-gray dark:text-dark-white">
         <BsImages />
         <h1>Gambar untuk {search}</h1>
       </div>
       <div className="w-full overflow-auto scrollbar-hide">
         <button
           onClick={() => decreement()}
-          className="hidden md:flex absolute bg-dark-second text-dark-gray hover:text-dark-white rounded-full h-[40px] w-[40px] justify-center items-center top-[50%] translate-y-[-55%] left-[-20px] z-10"
+          className="hidden md:flex absolute bg-second dark:bg-dark-second text-gray dark:text-dark-gray hover:text-gray dark:hover:text-dark-white rounded-full h-[40px] w-[40px] justify-center items-center top-[50%] translate-y-[-55%] left-[-20px] z-10"
         >
           <IoIosArrowBack size={24} />
         </button>
         <button
           onClick={() => increement()}
-          className="hidden md:flex absolute bg-dark-second text-dark-gray hover:text-dark-white rounded-full h-[40px] w-[40px] justify-center items-center top-[50%] translate-y-[-55%] right-[-20px] z-10"
+          className="hidden md:flex absolute bg-second dark:bg-dark-second text-gray dark:text-dark-gray hover:text-gray dark:hover:text-dark-white rounded-full h-[40px] w-[40px] justify-center items-center top-[50%] translate-y-[-55%] right-[-20px] z-10"
         >
           <IoIosArrowForward size={24} />
         </button>
@@ -89,11 +89,11 @@ const Images = () => {
             <div
               className={`flex flex-wrap justify-center w-auto lg:flex-nowrap lg:block lg:whitespace-nowrap transition-transform duration-700`}
             >
-              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block bg-dark-gray animate-pulse"></div>
-              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block bg-dark-gray animate-pulse"></div>
-              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block bg-dark-gray animate-pulse"></div>
-              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block bg-dark-gray animate-pulse"></div>
-              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block bg-dark-gray animate-pulse"></div>
+              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block dark:bg-dark-gray animate-pulse"></div>
+              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block dark:bg-dark-gray animate-pulse"></div>
+              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block dark:bg-dark-gray animate-pulse"></div>
+              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block dark:bg-dark-gray animate-pulse"></div>
+              <div className="h-[124px] w-[124px] mr-2 my-[8px] lg:max-w-[220px] lg:inline-block dark:bg-dark-gray animate-pulse"></div>
             </div>
           ) : (
             <div

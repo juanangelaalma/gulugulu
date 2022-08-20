@@ -52,8 +52,8 @@ const News = () => {
   }
 
   return (
-    <div className="w-full space-y-2 md:pb-6 md:border-b border-[#3C4043] md:relative">
-      <div className="flex flex-row items-center space-x-2 text-xl text-dark-white">
+    <div className="w-full space-y-2 md:pb-6 md:border-b border-b-[#EBEBEB] dark:border-[#3C4043] md:relative">
+      <div className="flex flex-row items-center space-x-2 text-xl text-gray dark:text-dark-white">
         <BiNews />
         <h1>Berita utama</h1>
       </div>

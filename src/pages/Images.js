@@ -70,10 +70,10 @@ const Images = () => {
               src={image.image.src}
               alt={image.image.alt}
             />
-            <h5 className="text-xs truncate text-dark-white mt-2">
+            <h5 className="text-xs truncate dark:text-dark-white mt-2">
               {image.link.title}
             </h5>
-            <h6 className="text-dark-gray text-xs truncate mt-0 capitalize">
+            <h6 className="dark:text-dark-gray text-xs truncate mt-0 capitalize">
               {getBrandName(image.link.domain)}
             </h6>
           </div>

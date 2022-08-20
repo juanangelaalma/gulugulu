@@ -14,15 +14,15 @@ const Site = ({ cite, additional_links, link, title, description }) => {
 
   return (
     <div>
-      <div className="flex flex-col pb-3 space-y-1 border-b border-b-[#3C4043] md:border-b-0">
-        <div className="text-dark-white text-xs md:text-sm font-normal">
+      <div className="flex flex-col pb-3 space-y-1 border-b dark:border-b-[#3C4043] md:border-b-0">
+        <div className="text-gray dark:text-dark-white text-xs md:text-sm font-normal">
           <a href={link}>{getDomainName(link)}</a>
-          <span className="text-dark-gray"> {cite?.span} </span>
+          <span className="text-gray-second dark:text-dark-gray"> {cite?.span} </span>
         </div>
-        <h1 className="text-dark-link text-xl">
+        <h1 className="text-link dark:text-dark-link text-xl">
           <a href={link}>{title}</a>
         </h1>
-        <p className="text-sm leading-[20px] text-dark-white">{description}</p>
+        <p className="text-sm leading-[20px] text-gray dark:text-dark-white">{description}</p>
       </div>
       <div className="flex flex-col md:pl-4">
         {additional_links &&
@@ -32,7 +32,7 @@ const Site = ({ cite, additional_links, link, title, description }) => {
         <div>
           <button
             onClick={handleSetSearchOther}
-            className="hidden md:block text-xs text-dark-link"
+            className="hidden md:block text-xs text-link dark:text-dark-link"
           >
             Telusuran lainnya dari {getDomainName(link)} »
           </button>
