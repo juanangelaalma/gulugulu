@@ -26,8 +26,8 @@ const Site = ({ cite, additional_links, link, title, description }) => {
       </div>
       <div className="flex flex-col md:pl-4">
         {additional_links &&
-          additional_links.map((link, index) => (
-            <AdditionalSite key={index} {...link} />
+          additional_links.slice(0,5).map((link, index) => (
+            (link.text && link.text != 'Översätt den här sidan') && (<AdditionalSite key={index} {...link} />)
           ))}
         <div>
           <button
